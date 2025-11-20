@@ -1,0 +1,227 @@
+<!-- <?php
+
+  class Person{
+
+                public $reader_ID;
+                public $firstName;
+                public $lastName;
+                public $address;
+                public $email;
+                public $phonenumber;
+                public $username;
+                public $User_password;
+
+
+                function __construct($UserID, $firstName, $lastName, $Address, $email, $phonenumber, $username, $User_password){
+                    $this->UserID = $UserID;
+                    $this->firstName = $firstName;
+                    $this->lastName = $lastName;
+                    $this->Address = $Address;
+                    $this->email = $email;
+                    $this->phonenumber = $phonenumber;
+                    $this->username = $username;
+                    $this->User_password = $User_password;
+                }
+
+            }
+
+            class Author extends Person{
+                public $authorID;
+                public $name;
+                public $genre;
+
+                function __construct($authorID, $name, $genre){
+                    // parent::__construct($UserID, $firstName, $lastName, $Address, $email, $phonenumber, $username, $User_password);
+                    $this->genre = $authorID;
+                    $this->genre = $genre;
+                }
+            }
+
+           
+            
+            class Staff extends Person{
+                public $staffID;
+                public $position;
+
+                function __construct($staffID, $position){
+                    parent::__construct($UserID, $firstName, $lastName, $Address, $email, $phonenumber, $username, $User_password);
+                    $this->staffID = $staffID;
+                    $this->position = $position;
+                }
+
+            }
+
+            class Publisher{
+                public $publisherID;
+                public $PublisherName;
+                public $year_Of_Publish_D;
+              
+
+                function __construct($publisherID, $PublisherName, $year_Of_Publish_D){
+                   $this->publisherID = $publisherID;
+                   $this->PublisherName = $PublisherName;
+                   $this->year_Of_Publish_D = $year_Of_Publish_D;
+                  
+                
+                }
+            }
+
+            class Reader extends Person{
+               
+                function __construct(){
+                    parent::__construct($UserID, $firstName, $lastName, $Address, $email, $phonenumber, $username, $password);
+                
+                }
+            }
+
+            class Book {
+                public $ID;
+                public $publisherID;
+                public $authorID;
+                public $title;
+                public $genre;
+                public $year_Of_Publish_D;
+                public $edition;
+                public $status;
+
+                function __construct(){
+                    $this->ID=$ID;
+                    $this->publisherID=$publisherID;
+                    $this->authorID=$authorID;
+                    $this->title=$title;
+                    $this->genre=$genre;
+                    $this->year_Of_Publish_D=$year_Of_Publish_D;
+                    $this->edition=$edition;
+                    $this->status=$status;
+                }
+                function Loan(){
+                    
+                }
+
+                function Return(){
+                    
+                }
+
+                function late_Fee (){
+                    
+                }
+            }
+
+            class borrow{ 
+                public $borrow_ID;
+                public $reader_ID;
+                public $bookID;
+                public $Start_Date;
+                public $End_Date;
+                
+
+                function __construct(){
+                    $this->borrow_ID=$borrow_ID;
+                    $this->reader_ID= $titreader_IDle;
+                    $this->bookID=$bookID;
+                    $this->Start_Date=$Start_Date;
+                    $this->End_Date=$End_Date;
+                }
+                
+            }
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="p-4 border-2 border-b-slate-600">
+            <div class="container flex justify-between items-center">
+                <div>
+                    <h1 class="text-[20px]">Library App</h1>
+                </div>
+                <div>
+
+                    <input
+                    type="text"
+                    class="w-[400px] border-2 border-nav_color border-1 p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Search..."
+                    >
+                </div>
+                <div class="flex">
+                   <p>hi</p>
+                   <p>hi</p>
+                   <p>hi</p>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <main class="">
+       <section class="" id="second_nav_bar">
+             <nav >
+                <div class="container">
+                    <ul class="*:p-2 *:rounded-2xl flex justify-between">
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href=""><i class="fa-solid fa-chart-simple"></i>Dashboard </a></li>
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href="add_member.html"><i class="fa-solid fa-user-group"></i>Member</a></li>
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href="add_book.html"><i class="fa-solid fa-book-open"></i>Add Books</a></li>
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href="add_author.html"><i class="fa-solid fa-gear"></i>Add Author</a></li>                
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href="add_publisher.html"><i class="fa-solid fa-gear"></i>Add Publisher</a></li>
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href="borrow.html"><i class="fa-solid fa-money-check"></i>Check out books</a></li>                
+                        <li class="hover:bg-green-600 hover:text-white "><a class="items-center flex gap-2" href=""><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a></li>                             
+                                
+                        
+                    </ul>
+                </div>
+
+                
+
+            </nav>
+       </section>
+        <section class=" w-full">
+            <div class="">
+                <div class="container  ">
+                    
+                    <form action="" class="mt-10 border-2 border-black shadow-lg p-5">
+                        <div class="text-center">
+                            <h1>Books</h1> 
+                            <h2>To Add a Books and view the Book reports</h2>
+                        </div>
+                        <label for="">BookID</label><br>
+                        <input type="text" placeholder="BookID" class=" border-2 border-nav_color border-1 p-2  m-2"><br>
+                        <label for="">Title</label><br>
+                        <input type="text" placeholder="Title" class=" border-2 border-nav_color border-1 p-2  m-2"><br>
+                        <label for="">Genre</label><br>
+                        <input type="text" placeholder="Genre " class=" border-2 border-nav_color border-1 p-2 m-2 "><br>
+                        <label for="">Edition</label><br>
+                        <input type="text" placeholder="Edition" class=" border-2 border-nav_color border-1 p-2 m-2"><br>
+                        <label for="">AuthorID</label><br>
+                        <input type="text" placeholder="AuthorID" class=" border-2 border-nav_color border-1 p-2 m-2"><br>
+                        <label for="">PublisherID</label><br>
+                        <input type="text" placeholder="PublisherID" class=" border-2 border-nav_color border-1 p-2 m-2"><br>
+                        <label for="">Publish Date</label><br>
+                        <input type="text" placeholder="Publish Date" class=" border-2 border-nav_color border-1 p-2 m-2"><br><br>
+                       
+                        
+                        <label for="">Status</label><br>
+                        <label for="" class="p-2  m-2">Aviliable</label>
+                        <input type="radio" class="p-2  m-2">
+                        <label for="" class="p-2  m-2">Not aviliable</label>
+                        <input type="radio" class="p-2  m-2"><br><br>
+
+                          <div class="cmn-btn-2">
+                            <i class="fa-solid fa-plus text-contrast_color text-lg"></i>
+                            <input class=" text-contrast_color  padding-left: 35px;" type="submit" value="ADD">
+                        </div>
+                       
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

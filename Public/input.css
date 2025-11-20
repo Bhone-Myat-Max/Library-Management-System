@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+        --nav-color: #2c4964;
+        --nav-hover-color: #1977cc;
+        --nav-mobile-background-color: #ffffff;
+        --nav-dropdown-background-color: #ffffff;
+        --nav-dropdown-color: #2c4964;
+        --nav-dropdown-hover-color: #1977cc;
+        --accent-color: #1977cc;
+        --background-color: #ffffff;
+        --default-color: #444444;
+        --heading-color: #2c4964;
+        --surface-color: #ffffff;
+        --contrast-color: #ffffff;
+
+    }
+
+    :root{
+        --default-font: "Roboto", system-ui, -apple-system,what  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --heading-font: "Poppins", sans-serif;
+        --nav-font: "Raleway", sans-serif;
+    }
+
+     body {
+       @apply font-default_font list-none text-default_color font-default_font bg-slate-50
+
+    }
+
+    form
+    {
+        @apply bg-white
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+       @apply text-heading_color font-heading-font font-bold
+    }
+
+    h1{
+        @apply text-[48px]
+    }
+
+    h3{
+        @apply text-[34px]
+    }
+
+
+
+
+    @layer components{
+
+        /* common */
+        label{
+            @apply font-bold text-nav_color
+        }
+        .member_Form .txtbox{
+            @apply w-full
+        }
+        .cmn-btn{
+            @apply w-52 h-12 inline-flex justify-center items-center rounded-3xl bg-green-600 text-contrast_color ;
+        }
+        .cmn-btn-2{
+
+          @apply bg-green-600 max-w-20 h-[42] flex items-center p-2 font-semibold rounded-3xl font-Lato border-black shadow-2xl
+   
+        }
+
+        .cmn-btn-2 input{
+
+          @apply mx-auto text-lg 
+   
+        }
+
+        .cmn-btn-3{
+             @apply bg-green-600 w-1/4 h-9 flex items-center  rounded-2xl font-Lato
+        }
+
+        .cmn-btn-3 input{
+            @apply mx-auto
+        }
+
+        .cmn-btn-2:hover{
+            @apply bg-green-500
+        }
+        main{
+       
+        }
+
+     #second_nav_bar{
+            @apply p-3 font-Lato   border-r-2 border-black sticky  top-0 bg-heading_color text-white mb-10
+        }
+    }
