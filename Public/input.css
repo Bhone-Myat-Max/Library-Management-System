@@ -27,13 +27,13 @@
     }
 
      body {
-       @apply font-default_font list-none text-default_color font-default_font bg-slate-50
+       @apply font-default_font list-none text-default_color font-default_font
 
     }
 
     form
     {
-        @apply bg-white
+       @apply shadow-slate-950 shadow-2xl
     }
 
     h1, h2, h3, h4, h5, h6 {
